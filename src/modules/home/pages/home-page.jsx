@@ -3,6 +3,7 @@ import FeaturedCarsoul from "../../../common/components/featured-carousel";
 import CommonSwiper from "../../../common/components/common-swiper";
 import { Badge, Card, Container, Table } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
+import CustomCard from "../../../common/custom-card/CustomCard";
 
 // Import Swiper styles
 import "swiper/css";
@@ -10,53 +11,29 @@ import "swiper/css";
 import { listData } from "../../tales-of-startups/demo-data/demo-list-data";
 
 const HomePage = () => {
+
+  /*IMPL CARD COLOR */
+  const colors = [
+    "#c7d2fe",
+    "#d1fae5",
+    "#ffedd5",
+    "#bae6fd",
+    "#fef2f2",
+    "#fef9c3"
+  ]
   return (
     <>
       <FeaturedCarsoul />
-      <Container className="my-4 w-100">
-        <div className="alert alert-warning">
-          <div className="d-flex justify-content-between align-items-center">
-            <h1>Tales of Startups</h1>
-            <Badge bg="primary" className="d-flex gap-2">
-              View all
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 448 512"
-                fill="#ffffff"
-              >
-                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-              </svg>
-            </Badge>
-          </div>
-
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.{" "}
-          </p>
+      <Container className="my-4 w-100 d-flex">
+        <div className="d-flex flex-wrap">
+          {
+            colors.map((color, index) => {
+              return (
+                <CustomCard color={color} />
+              )
+            })
+          }
         </div>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Headquarter</th>
-              <th>Business Model</th>
-            </tr>
-          </thead>
-          <tbody>
-            {listData.slice(0,5).map((_i, idx) => (
-              <tr key={idx + 1}>
-                <td>{idx + 1}</td>
-                <td>{_i?.name}</td>
-                <td>{_i?.headquarter}</td>
-                <td>{_i?.business_model}</td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
       </Container>
       <Container className="my-4 w-100">
         <div className="alert alert-info">

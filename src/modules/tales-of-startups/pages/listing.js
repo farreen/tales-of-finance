@@ -15,6 +15,9 @@ import {
 } from "react-bootstrap";
 import { listData } from "../demo-data/demo-list-data";
 import Form from 'react-bootstrap/Form';
+import TofCustomCard from "../../../common/tof-custom-card/TofCustomCard";
+import Masonry from "react-masonry-css";
+
 const options = [
   {
     category: "fruit",
@@ -127,7 +130,7 @@ const TalesOfStartupsListing = () => {
         </Form>
 
         <Button variant="primary" onClick={handleShow}>
-        <img src={filter} loading="lazy" alt="filter" height="20" width="20" fill="#FFF"/>
+          <img src={filter} loading="lazy" alt="filter" height="20" width="20" fill="#FFF" />
           Filter
         </Button>
       </Container>
@@ -150,18 +153,18 @@ const TalesOfStartupsListing = () => {
                 return (
                   <div>
                     <Form.Group>
-                    <Form.Check type={"checkbox"}>
-                      <Form.Check
-                        type={"checkbox"}
-                        defaultChecked={false}
-                        name={item.items}
-                        onChange={(e) => {
-                          handleChange(e)
-                        }}
-                      />
-                      <Form.Check.Label>{item.category}</Form.Check.Label>
-                    </Form.Check>
-                  </Form.Group>
+                      <Form.Check type={"checkbox"}>
+                        <Form.Check
+                          type={"checkbox"}
+                          defaultChecked={false}
+                          name={item.items}
+                          onChange={(e) => {
+                            handleChange(e)
+                          }}
+                        />
+                        <Form.Check.Label>{item.category}</Form.Check.Label>
+                      </Form.Check>
+                    </Form.Group>
                   </div>
                 )
               })
@@ -169,11 +172,12 @@ const TalesOfStartupsListing = () => {
           </Form>
         </Offcanvas.Body>
       </Offcanvas>
-      <Row>
-        <Col>
-        </Col>
-        <Col lg="8">
-          <Table striped bordered hover>
+      <Container >
+        {/* <Row> */}
+        {/* <Col>
+        </Col> */}
+        {/* <Col> */}
+        {/* <Table striped bordered hover>
             <thead>
               <tr>
                 <th>#</th>
@@ -219,10 +223,35 @@ const TalesOfStartupsListing = () => {
                 </tr>
               ))}
             </tbody>
-          </Table>
-        </Col>
-        <Col></Col>
-      </Row>
+          </Table> */}
+
+        <Masonry
+          breakpointCols={{
+            default: 4,
+            1100: 3,
+            700: 2,
+            500: 1,
+          }}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+        {/* <div className="d-flex flex-wrap"> */}
+          {
+            listData.map((items) => {
+              return (
+                <>
+                <TofCustomCard items={items} />
+                </>
+              )
+
+            })
+          }
+          {/* </div> */}
+        </Masonry>
+        {/* </Col> */}
+        {/* <Col></Col> */}
+        {/* </Row> */}
+      </Container>
       <Modal
         show={openModal}
         onHide={modalHandler}
