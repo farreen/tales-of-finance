@@ -31,6 +31,8 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
+      color: "#c7d2fe",
+      category: "Fintech"
     },
   
     {
@@ -58,6 +60,8 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
+      color:"#bbf7d0",
+      category: "Edtech"
     },
   
     {
@@ -86,6 +90,8 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
+      color:"#ffedd5",
+      category: "Healthtech",
     },
   
     {
@@ -117,6 +123,8 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
+      color: "#bae6fd",
+      category: "Agritech",
     },
   
     {
@@ -148,6 +156,8 @@ export const listData = [
       user_age: "18 to 25  ",
       user_income: "Lower-middle Income",
       user_location: "India",
+      color: "#fef2f2",
+      category: "Spacetech"
     },
   
     {
@@ -174,6 +184,8 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
+      color:"#fef9c3",
+      category: "Foodtech",
     },
   
     {
@@ -201,6 +213,7 @@ export const listData = [
       user_age: "26 to 34",
       user_income: "Lower-middle Income  ",
       user_location: "India",
+      category: "Spacetech",
     },
   
     {
@@ -228,6 +241,7 @@ export const listData = [
       user_age: "26 to 34,  35 to 45,  46 to 60 ",
       user_income: "Lower-middle Income,  Upper-middle Income,  High Income  ",
       user_location: "India,  Asia Pacific  ",
+      category: "Spacetech"
     },
   
     {
