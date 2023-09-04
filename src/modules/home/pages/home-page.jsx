@@ -9,31 +9,43 @@ import CustomCard from "../../../common/custom-card/CustomCard";
 import "swiper/css";
 // import Card from "../../../common/components/card";
 import { listData } from "../../tales-of-startups/demo-data/demo-list-data";
-
 const HomePage = () => {
-
-  /*IMPL CARD COLOR */
-  const colors = [
-    "#c7d2fe",
-    "#d1fae5",
-    "#ffedd5",
-    "#bae6fd",
-    "#fef2f2",
-    "#fef9c3"
-  ]
   return (
     <>
       <FeaturedCarsoul />
-      <Container className="my-4 w-100 d-flex">
-        <div className="d-flex flex-wrap">
-          {
-            colors.map((color, index) => {
-              return (
-                <CustomCard color={color} />
-              )
-            })
-          }
+
+      <Container className="my-4 w-100">
+        <div className="alert alert-info">
+          <div className="d-flex justify-content-between align-items-center">
+            <h1>Tales of Startup</h1>
+            <Badge bg="primary" className="d-flex gap-2">
+              View all
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+                fill="#ffffff"
+              >
+                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+              </svg>
+            </Badge>
+
+          </div>
+          <p>
+            Here are the lists of most exciting startups in each of the industry{" "}
+          </p>
+
+          <div className="d-flex flex-wrap">
+            {
+              listData.slice(0, 6).map((item, index) => {
+                return (
+                  <CustomCard item={item} />
+                )
+              })
+            }
+          </div>
         </div>
+
       </Container>
       <Container className="my-4 w-100">
         <div className="alert alert-info">
