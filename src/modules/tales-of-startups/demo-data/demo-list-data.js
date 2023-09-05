@@ -36,7 +36,7 @@ export const listData = [
     },
   
     {
-      name: "rentNet",
+      name: "RentNet",
       link: "https://rentnet.in/",
       description:
         "rentNet: Free Property Management & Maintenance Software for 5 Properties. Simplify Real Estate Management using the best application. Collect Rent and Manage Properties with Ease!",
@@ -213,7 +213,7 @@ export const listData = [
       user_age: "26 to 34",
       user_income: "Lower-middle Income  ",
       user_location: "India",
-      category: "Spacetech",
+      category: "Web3",
     },
   
     {
@@ -241,7 +241,7 @@ export const listData = [
       user_age: "26 to 34,  35 to 45,  46 to 60 ",
       user_income: "Lower-middle Income,  Upper-middle Income,  High Income  ",
       user_location: "India,  Asia Pacific  ",
-      category: "Spacetech"
+      category: "Deeptech"
     },
   
     {
@@ -273,6 +273,7 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
+      category: "SaaS"
     },
   
     {
@@ -300,6 +301,7 @@ export const listData = [
       user_age: "26 to 34,  More than 60",
       user_income: "Lower-middle Income,  Upper-middle Income  ",
       user_location: "Global,  North America,  South America  ",
+      category: "E-Commerce"
     },
   ];
   
