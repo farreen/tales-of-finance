@@ -14,8 +14,11 @@
     border-radius: 1rem 1rem 0 0;
 }
 
-.card-title,
-.card-description {
+.card-title{
+    margin: 0.5rem 5%;
+    padding-top: 0.5rem;
+}
+.card-description{
     margin: 0.5rem 5%;
 }
 

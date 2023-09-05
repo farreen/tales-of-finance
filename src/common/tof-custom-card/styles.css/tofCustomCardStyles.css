@@ -12,7 +12,11 @@
     width: 100%;
     border-radius: 0.5rem 0.5rem 0 0;
 }
-.customCard-title, .customCard-description{
+.customCard-title{
+    margin: 0.5rem 5%;
+    padding-top: 0.5rem;
+}
+.customCard-description{
     margin: 0.5rem 5%;
 }
 
