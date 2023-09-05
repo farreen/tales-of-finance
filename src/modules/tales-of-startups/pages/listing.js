@@ -17,66 +17,32 @@ import { listData } from "../demo-data/demo-list-data";
 import Form from 'react-bootstrap/Form';
 import TofCustomCard from "../../../common/tof-custom-card/TofCustomCard";
 import Masonry from "react-masonry-css";
-
-const options = [
-  {
-    category: "fruit",
-    items: ["apple", "orange", "lichi", "banana"]
-  },
-  {
-    category: "vegetables",
-    items: ["potato", "oninon", "brinjal", "chilli"]
-  },
-  {
-    category: "cereals",
-    items: ["pulse", "wheat", "rice", "etc"]
-  },
-  {
-    category: "pulses",
-    items: ["pulse1", "pulse2", "pulse3", "pulse4"]
-  },
-  {
-    category: "nuts",
-    items: ["walnut", "cashew", "almond", "pista"]
-  },
-  {
-    category: "nutsA",
-    items: ["walnut", "cashew", "almond", "pista"]
-  },
-  {
-    category: "nutsB",
-    items: ["walnut", "cashew", "almond", "pista"]
-  },
-  {
-    category: "nutsC",
-    items: ["walnut", "cashew", "almond", "pista"]
-  },
-]
+import { industries } from "../demo-data/categories-demo-data";
 const TalesOfStartupsListing = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const modalHandler = () => setOpenModal(!openModal);
+  // const [openModal, setOpenModal] = useState(false);
+  // const modalHandler = () => setOpenModal(!openModal);
   const [selectedOption, setSelectedOption] = useState([]);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const {
-    name,
-    link,
-    description,
-    legal_name,
-    headquarter,
-    business_model,
-    founding_date,
-    employee_count,
-    team_member,
-    revenue_stream,
-    client_segment,
-    target_companies,
-    target_geography,
-    user_age,
-    user_income,
-    user_location,
-  } = listData[0];
+  // const {
+  //   name,
+  //   link,
+  //   description,
+  //   legal_name,
+  //   headquarter,
+  //   business_model,
+  //   founding_date,
+  //   employee_count,
+  //   team_member,
+  //   revenue_stream,
+  //   client_segment,
+  //   target_companies,
+  //   target_geography,
+  //   user_age,
+  //   user_income,
+  //   user_location,
+  // } = listData[0];
   const handleChange = (e) => {
     console.log("targets", e.target.name)
     const { name, checked } = e.target
@@ -105,9 +71,9 @@ const TalesOfStartupsListing = () => {
           options={options}
         />
          */}
-        <Form>
+        {/* <Form>
           {
-            options.map((item) => {
+            industries.map((item) => {
               return (
                 <div className="checkBox ">
                   <Form.Group>
@@ -115,24 +81,24 @@ const TalesOfStartupsListing = () => {
                       <Form.Check
                         type={"checkbox"}
                         defaultChecked={false}
-                        name={item.items}
+                        name={item}
                         onChange={(e) => {
                           handleChange(e)
                         }}
                       />
-                      <Form.Check.Label>{item.category}</Form.Check.Label>
+                      <Form.Check.Label>{item}</Form.Check.Label>
                     </Form.Check>
                   </Form.Group>
                 </div>
               )
             })
           }
-        </Form>
+        </Form> */}
 
-        <Button variant="primary" onClick={handleShow}>
+        {/* <Button variant="primary" onClick={handleShow}>
           <img src={filter} loading="lazy" alt="filter" height="20" width="20" fill="#FFF" />
           Filter
-        </Button>
+        </Button> */}
       </Container>
       <Container>
         {selectedOption.map((e) => {
@@ -149,7 +115,7 @@ const TalesOfStartupsListing = () => {
         <Offcanvas.Body>
           <Form>
             {
-              options.map((item) => {
+              industries.map((item) => {
                 return (
                   <div>
                     <Form.Group>
@@ -157,12 +123,12 @@ const TalesOfStartupsListing = () => {
                         <Form.Check
                           type={"checkbox"}
                           defaultChecked={false}
-                          name={item.items}
+                          name={item}
                           onChange={(e) => {
                             handleChange(e)
                           }}
                         />
-                        <Form.Check.Label>{item.category}</Form.Check.Label>
+                        <Form.Check.Label>{item}</Form.Check.Label>
                       </Form.Check>
                     </Form.Group>
                   </div>
@@ -177,7 +143,7 @@ const TalesOfStartupsListing = () => {
         {/* <Col>
         </Col> */}
         {/* <Col> */}
-        {/* <Table striped bordered hover>
+        {/*  <Table striped bordered hover>
             <thead>
               <tr>
                 <th>#</th>
@@ -235,35 +201,33 @@ const TalesOfStartupsListing = () => {
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column"
         >
-        {/* <div className="d-flex flex-wrap"> */}
           {
-            listData.map((items) => {
+            listData.map((item) => {
               return (
                 <>
-                <TofCustomCard items={items} />
+                  <TofCustomCard item={item} />
                 </>
               )
 
             })
           }
-          {/* </div> */}
         </Masonry>
         {/* </Col> */}
         {/* <Col></Col> */}
         {/* </Row> */}
       </Container>
-      <Modal
+      {/* <Modal
         show={openModal}
         onHide={modalHandler}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        {/* <Modal.Header closeButton>
+        <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
               Modal heading
             </Modal.Title>
-          </Modal.Header> */}
+          </Modal.Header>
         <Modal.Body>
           {name && <h4>{name}</h4>}
           <Table hover>
@@ -344,7 +308,7 @@ const TalesOfStartupsListing = () => {
         <Modal.Footer>
           <Button onClick={modalHandler}>Close</Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     </>
   );
 
