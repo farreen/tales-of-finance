@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import companyLogo from '../../assets/image/tales_of_finance_logo.png'
-import { faFacebook, faInstagram, faTwitter, faLinkedin, faSquareThreads } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faLinkedin, faSquareThreads, faSquareXTwitter} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,7 +23,7 @@ const Footer = () => {
             </a>
 
             <a href="https://twitter.com/talesoffinance" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faSquareXTwitter} />
             </a>
             <a href="https://www.linkedin.com/company/talesoffiance/" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
