@@ -9,11 +9,11 @@ import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-
 const Footer = () => {
   return (
     <div className="position-absolute w-100">
-      <Row className="w-100 m-0 bg-primary p-2 bg-opacity-10">
-        <Col>
-          <img src={companyLogo} loading="lazy" alt="navbar-logo" height="40" width="50" />
+      <Row className="w-100 m-0 bg-primary p-3 bg-opacity-10 ">
+        <Col className="mt-4">
+          {/* <img src={companyLogo} loading="lazy" alt="navbar-logo" height="40" width="50" /> */}
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias quod tempora sint eos, mollitia sapiente labore laboriosam voluptas consequatur ullam officia dignissimos doloremque fugiat, similique accusamus incidunt impedit eius!</p>
-          <div className="d-flex gap-5 justify-content-center mt-4 fs-1">
+          <div className="d-flex gap-5 justify-content-center fs-1">
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
@@ -34,7 +34,7 @@ const Footer = () => {
             </a>
           </div>
         </Col>
-        <Col className="d-flex flex-column justify-content-center align-items-center">
+        {/* <Col className="d-flex flex-column justify-content-center align-items-center">
           <h4>Categories</h4>
           <div>
             <div>
@@ -50,9 +50,9 @@ const Footer = () => {
               Blogs
             </div>
           </div>
-        </Col>
+        </Col> */}
         <Col className="d-flex flex-column justify-content-center align-items-center">
-          <h4>Contact us</h4>
+          {/* <h4>Contact us</h4> */}
           <div>
             <ul className=" fs-5 list-unstyled">
               <li className="mb-2">
