@@ -32,7 +32,9 @@ export const listData = [
       user_income: "",
       user_location: "",
       color: "#c7d2fe",
-      category: "Fintech"
+      category: "Fintech",
+      startupName: "Klue",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1k6PJItGxjZFPgw9II_AKQshBlFS8IdhA"
     },
   
     {
@@ -61,7 +63,9 @@ export const listData = [
       user_income: "",
       user_location: "",
       color:"#bbf7d0",
-      category: "Edtech"
+      category: "Edtech",
+      startupName:"Keya Medical",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1k6xABozAjm9GnDasqJDFxREqALAB0Nhi"
     },
   
     {
@@ -92,6 +96,9 @@ export const listData = [
       user_location: "",
       color:"#ffedd5",
       category: "Healthtech",
+      startupName:"Kavout",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kAJi5hbKGibYmRmIjs64lCv3aqOlB_Ad"
+
     },
   
     {
@@ -125,6 +132,8 @@ export const listData = [
       user_location: "",
       color: "#bae6fd",
       category: "Agritech",
+      startupName:"ioCurrents",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kCLyqH2tJE9NHNmGGos2x6VKfd6qZTKS"
     },
   
     {
@@ -157,7 +166,9 @@ export const listData = [
       user_income: "Lower-middle Income",
       user_location: "India",
       color: "#fef2f2",
-      category: "Spacetech"
+      category: "Spacetech",
+      startupName:"Inyore",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kLCiQ0K99pOb93kA0tN9C7gXtUorrb3X"
     },
   
     {
@@ -186,6 +197,9 @@ export const listData = [
       user_location: "",
       color:"#fef9c3",
       category: "Foodtech",
+      startupName:"Theta Additive",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1ki-99T-1j6CMEUWNKSydq4oAAhOFUMfH"
+
     },
   
     {
@@ -214,6 +228,9 @@ export const listData = [
       user_income: "Lower-middle Income  ",
       user_location: "India",
       category: "Web3",
+      startupName:"Humanly",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kcs1xpHXgRitFsoXA4mFOC3-PC8GFsXD"
+
     },
   
     {
@@ -241,7 +258,10 @@ export const listData = [
       user_age: "26 to 34,  35 to 45,  46 to 60 ",
       user_income: "Lower-middle Income,  Upper-middle Income,  High Income  ",
       user_location: "India,  Asia Pacific  ",
-      category: "Deeptech"
+      category: "Deeptech",
+      startupName:"Neuconomi",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kYug201dyvQNS_1pXWicJkZ4Kho6yKx3"
+
     },
   
     {
@@ -273,7 +293,10 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
-      category: "SaaS"
+      category: "SaaS",
+      startupName:"Ctruh",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kXiPfZXXBB6Cs62mEGEPwp56JfFoj20D"
+
     },
   
     {
@@ -301,7 +324,9 @@ export const listData = [
       user_age: "26 to 34,  More than 60",
       user_income: "Lower-middle Income,  Upper-middle Income  ",
       user_location: "Global,  North America,  South America  ",
-      category: "E-Commerce"
+      category: "E-Commerce",
+      startupName:"ecoRobotix",
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kQThNQazYOenEPtehS4rLqVSLJtTkNfG"
     },
   ];
   
