@@ -15,11 +15,14 @@ const TofCustomCard = ({ item }) => {
     return (
         <>
             <div className='customCard-contanier' onClick={modalHandler}>
-                <h6 className='customCard-title'>{item.category}</h6>
-                <img src='https://picsum.photos/500/180' alt='card pic' className='customCard-img' />
+                <img src={item.startupLogo} alt='logo' className='customCard-img' />
+                <h5 className='customCard-title mt-4'>{item.startupName}</h5>
+
+                <p className='customCard-title'>{item.name}</p>
+                <p className='customCard-title category'>INDUSTRY</p>
                 <div className="d-flex justify-content-between align-items-center">
-                    <p className='customCard-description'>{item?.name}</p>
-                    <Badge bg="primary" className="d-flex gap-2 mx-1 ">
+                    <h6 className='customCard-category category-pill'>{item?.category}</h6>
+                    <Badge bg="primary" className="d-flex gap-2 mx-2 ">
                         View
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
