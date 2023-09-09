@@ -15,7 +15,7 @@ import {
 } from "react-bootstrap";
 import { listData } from "../demo-data/demo-list-data";
 import Form from 'react-bootstrap/Form';
-import TofCustomCard from "../../../common/tof-custom-card/TofCustomCard";
+import ToSCustomCard from "../../../common/tof-custom-card/ToSCustomCard";
 import Masonry from "react-masonry-css";
 import { industries } from "../demo-data/categories-demo-data";
 const TalesOfStartupsListing = () => {
@@ -206,7 +206,7 @@ const TalesOfStartupsListing = () => {
             listData.map((item) => {
               return (
                 <>
-                  <TofCustomCard item={item} />
+                  <ToSCustomCard item={item} />
                 </>
               )
 
