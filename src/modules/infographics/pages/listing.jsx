@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import "../../../common/styles/global.css";
 import { Button, Card, Container, Modal } from "react-bootstrap";
+import '../styles/infographic-styles.css'
 
 const InfographicsListing = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -21,7 +22,7 @@ const InfographicsListing = () => {
       <Container className="w-100">
         <Masonry
           breakpointCols={{
-            default: 4,
+            default: 2,
             1100: 3,
             700: 2,
             500: 1,
@@ -30,7 +31,7 @@ const InfographicsListing = () => {
           columnClassName="my-masonry-grid_column"
         >
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((_i) => (
-            <Card className="cursor-pointer" onClick={modalHandler}>
+            <Card className="cursor-pointer boxShadow" onClick={modalHandler}>
               <Card.Img
                 variant="top"
                 src="https://picsum.photos/200/300"
