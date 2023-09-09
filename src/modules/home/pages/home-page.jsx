@@ -9,16 +9,34 @@ import CustomCard from "../../../common/custom-card/CustomCard";
 import "swiper/css";
 // import Card from "../../../common/components/card";
 import { listData } from "../../tales-of-startups/demo-data/demo-list-data";
+import '../styles/home-card.css';
+import { navBarData } from "../../../data/nav-bar-data";
+import useRedirect from "../../../common/custom-hooks/useRedirect";
 const HomePage = () => {
+  console.log("routes", ...navBarData)
+  const redirect = useRedirect();
+  let talesOfStartups = "";
+  let infographics = "";
+  let blogs = "";
+  navBarData.map((item) => {
+    if (item?.path === "tales-of-startups") {
+      return talesOfStartups = item?.path
+    } else if (item?.path === "infographics") {
+      return infographics = item?.path
+    } else if (item?.path === "blogs") {
+      return blogs = item?.path
+    }
+  })
+
   return (
     <>
       <FeaturedCarsoul />
 
       <Container className="my-4 w-100">
-        <div className="alert alert-info">
+        <div className="alert alert-warning w-100">
           <div className="d-flex justify-content-between align-items-center">
             <h1>Tales of Startup</h1>
-            <Badge bg="primary" className="d-flex gap-2">
+            <Badge bg="primary" className="d-flex gap-2 cursor-pointer" onClick={() => redirect(talesOfStartups)}>
               View all
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,14 +62,14 @@ const HomePage = () => {
               })
             }
           </div>
+          <div className="fs-5">List your Startup</div>
         </div>
-
       </Container>
       <Container className="my-4 w-100">
         <div className="alert alert-info">
           <div className="d-flex justify-content-between align-items-center">
             <h1>Infographics</h1>
-            <Badge bg="primary" className="d-flex gap-2">
+            <Badge bg="primary" className="d-flex gap-2 cursor-pointer" onClick={() => redirect(infographics)}>
               View all
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,11 +124,12 @@ const HomePage = () => {
                     </Card.Text>
                   </Card.Body>
                 </Card> */}
-                <Card className="bg-dark text-white">
+                <Card className="bg-dark text-white boxShadow">
                   <Card.Img
+                    variant="top"
                     src="https://picsum.photos/200/300"
                     alt="Card image"
-                    height={300}
+                    height={200}
                     width={100}
                   />
                   <div className="overlay pt-2 px-2 rounded-3">
@@ -132,7 +151,7 @@ const HomePage = () => {
         <div className="alert alert-success">
           <div className="d-flex justify-content-between align-items-center">
             <h1>Blogs</h1>
-            <Badge bg="primary" className="d-flex gap-2">
+            <Badge bg="primary" className="d-flex gap-2 cursor-pointer" onClick={() => {redirect(blogs)}}>
               View all
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -172,19 +191,21 @@ const HomePage = () => {
           >
             {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((_i) => (
               <SwiperSlide className="px-2 my-2 cursor-pointer">
-                <Card>
+                <Card className="boxShadow">
                   <Card.Img
                     variant="top"
                     src="https://picsum.photos/200/300"
                     height={200}
                     width={100}
                   />
-                  <Card.Body>
+
+                  <Card.Body className="overlay pt-2 px-2 rounded-3">
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text className="text-truncate">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </Card.Text>
+                    <Card.Text>Last updated 3 mins ago</Card.Text>
                   </Card.Body>
                 </Card>
               </SwiperSlide>
