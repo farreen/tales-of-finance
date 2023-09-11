@@ -43,6 +43,8 @@ const FeaturedCarsoul = () => {
             alt="First slide"
             style={{ cursor: "pointer" }}
             onClick={() => redirectTo(_item?.targetUrl)}
+            // width={100}
+            height={400}
           />
           <Carousel.Caption>
             <h3>{_item.image} slide label</h3>
