@@ -5,7 +5,7 @@ export const blogsDummyData = [
         descripton: "This is the first description of the image"
     },
     {
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1025px-Cat03.jpg",
+        image: "https://drive.google.com/uc?export=view&id=1kcs1xpHXgRitFsoXA4mFOC3-PC8GFsXD",
         descripton: "This is the second description of the image"
     },
     {
