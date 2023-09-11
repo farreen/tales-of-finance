@@ -29,7 +29,6 @@ const HomePage = () => {
     }
   })
 
-  const [toggle, setToggle] = useState(true);
   return (
     <>
       <FeaturedCarsoul />
@@ -37,53 +36,32 @@ const HomePage = () => {
         <div className="w-100">
           <div className="d-flex justify-content-between align-items-center">
             <h1>Tales of Startup</h1>
-            {
-              toggle &&
-              <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => setToggle(false)}>
-                view
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 448 512"
-                  fill="#ffffff"
-                >
-                  <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                </svg>
-              </div>
-            }
+            <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => ""}>
+              view
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+                fill="#ffffff"
+              >
+                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+              </svg>
+            </div>
+
           </div>
           <p>
             Here are the lists of most exciting startups in each of the industry{" "}
           </p>
           {
-            toggle ?
-              (
-                <div className="d-flex flex-wrap">
-                  {
-                    listData.slice(0, 6).map((item, index) => {
-                      return (
-                        <CustomCard item={item} />
-                      )
-                    })
-                  }
-                </div>
-              ) :
-              (
-                <>
-                  <div className="d-flex flex-wrap">
-                    {
-                      listData.map((item, index) => {
-                        return (
-                          <CustomCard item={item} />
-                        )
-                      })
-                    }
-                  </div>
-                  <div className="list-startup d-flex justify-content-center align-items-center mt-2">
-                    <h6>List your Startup</h6>
-                  </div>
-                </>
-              )
+            <div className="d-flex flex-wrap">
+              {
+                listData.slice(0, 6).map((item, index) => {
+                  return (
+                    <CustomCard item={item} />
+                  )
+                })
+              }
+            </div>
 
           }
 
