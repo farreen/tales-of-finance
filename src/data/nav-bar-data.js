@@ -6,3 +6,7 @@ export const navBarData = [
     { name: "Blogs", path: "blogs" },
     { name: "Contact us", path: "contact-us" },
   ];
+
+  export const routeData = [
+    {name: "categories", path: "categories-listing"}
+  ]

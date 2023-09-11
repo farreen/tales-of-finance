@@ -13,12 +13,14 @@ import { listData } from "../../tales-of-startups/demo-data/demo-list-data";
 import '../styles/home-card.css';
 import { navBarData } from "../../../data/nav-bar-data";
 import useRedirect from "../../../common/custom-hooks/useRedirect";
+import {routeData} from '../../../data/nav-bar-data';
 const HomePage = () => {
   console.log("routes", ...navBarData)
   const redirect = useRedirect();
   let talesOfStartups = "";
   let infographics = "";
   let blogs = "";
+  let categoriesListing = "";
   navBarData.map((item) => {
     if (item?.path === "tales-of-startups") {
       return talesOfStartups = item?.path
@@ -26,6 +28,11 @@ const HomePage = () => {
       return infographics = item?.path
     } else if (item?.path === "blogs") {
       return blogs = item?.path
+    }
+  })
+  routeData.map((item) => {
+    if(item?.path === "categories-listing"){
+      return categoriesListing = item?.path
     }
   })
 
@@ -36,7 +43,7 @@ const HomePage = () => {
         <div className="w-100">
           <div className="d-flex justify-content-between align-items-center">
             <h1>Tales of Startup</h1>
-            <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => ""}>
+            <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => redirect(categoriesListing)}>
               view
               <svg
                 xmlns="http://www.w3.org/2000/svg"
