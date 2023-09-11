@@ -31,7 +31,7 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
-      color: "#c7d2fe",
+      color: "#dbeafe",
       category: "Fintech",
       startupName: "Klue",
       startupLogo:"https://drive.google.com/uc?export=view&id=1k6PJItGxjZFPgw9II_AKQshBlFS8IdhA"
@@ -62,7 +62,7 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
-      color:"#bbf7d0",
+      color:"#d1fae5",
       category: "Edtech",
       startupName:"Keya Medical",
       startupLogo:"https://drive.google.com/uc?export=view&id=1k6xABozAjm9GnDasqJDFxREqALAB0Nhi"
@@ -227,6 +227,7 @@ export const listData = [
       user_age: "26 to 34",
       user_income: "Lower-middle Income  ",
       user_location: "India",
+      color: "#ffe4e6",
       category: "Web3",
       startupName:"Humanly",
       startupLogo:"https://drive.google.com/uc?export=view&id=1kcs1xpHXgRitFsoXA4mFOC3-PC8GFsXD"
@@ -258,6 +259,7 @@ export const listData = [
       user_age: "26 to 34,  35 to 45,  46 to 60 ",
       user_income: "Lower-middle Income,  Upper-middle Income,  High Income  ",
       user_location: "India,  Asia Pacific  ",
+      color: "#fae8ff",
       category: "Deeptech",
       startupName:"Neuconomi",
       startupLogo:"https://drive.google.com/uc?export=view&id=1kYug201dyvQNS_1pXWicJkZ4Kho6yKx3"
@@ -293,6 +295,7 @@ export const listData = [
       user_age: "",
       user_income: "",
       user_location: "",
+      color: "#e2e8f0",
       category: "SaaS",
       startupName:"Ctruh",
       startupLogo:"https://drive.google.com/uc?export=view&id=1kXiPfZXXBB6Cs62mEGEPwp56JfFoj20D"
@@ -324,6 +327,7 @@ export const listData = [
       user_age: "26 to 34,  More than 60",
       user_income: "Lower-middle Income,  Upper-middle Income  ",
       user_location: "Global,  North America,  South America  ",
+      color: "#e2e8f0",
       category: "E-Commerce",
       startupName:"ecoRobotix",
       startupLogo:"https://drive.google.com/uc?export=view&id=1kQThNQazYOenEPtehS4rLqVSLJtTkNfG"
