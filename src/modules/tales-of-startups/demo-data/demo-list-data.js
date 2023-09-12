@@ -34,7 +34,8 @@ export const listData = [
       color: "#dbeafe",
       category: "Fintech",
       startupName: "Klue",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1k6PJItGxjZFPgw9II_AKQshBlFS8IdhA"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1k6PJItGxjZFPgw9II_AKQshBlFS8IdhA",
+      startupCount: "12K+"
     },
   
     {
@@ -65,7 +66,8 @@ export const listData = [
       color:"#d1fae5",
       category: "Edtech",
       startupName:"Keya Medical",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1k6xABozAjm9GnDasqJDFxREqALAB0Nhi"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1k6xABozAjm9GnDasqJDFxREqALAB0Nhi",
+      startupCount: "14K+"
     },
   
     {
@@ -97,7 +99,8 @@ export const listData = [
       color:"#ffedd5",
       category: "Healthtech",
       startupName:"Kavout",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1kAJi5hbKGibYmRmIjs64lCv3aqOlB_Ad"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kAJi5hbKGibYmRmIjs64lCv3aqOlB_Ad",
+      startupCount: "18K"
 
     },
   
@@ -133,7 +136,8 @@ export const listData = [
       color: "#bae6fd",
       category: "Agritech",
       startupName:"ioCurrents",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1kCLyqH2tJE9NHNmGGos2x6VKfd6qZTKS"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kCLyqH2tJE9NHNmGGos2x6VKfd6qZTKS",
+      startupCount: "50+"
     },
   
     {
@@ -168,7 +172,8 @@ export const listData = [
       color: "#fef2f2",
       category: "Spacetech",
       startupName:"Inyore",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1kLCiQ0K99pOb93kA0tN9C7gXtUorrb3X"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kLCiQ0K99pOb93kA0tN9C7gXtUorrb3X",
+      startupCount: "20K"
     },
   
     {
@@ -198,7 +203,8 @@ export const listData = [
       color:"#fef9c3",
       category: "Foodtech",
       startupName:"Theta Additive",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1ki-99T-1j6CMEUWNKSydq4oAAhOFUMfH"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1ki-99T-1j6CMEUWNKSydq4oAAhOFUMfH",
+      startupCount: "10K",
 
     },
   
@@ -230,7 +236,8 @@ export const listData = [
       color: "#ffe4e6",
       category: "Web3",
       startupName:"Humanly",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1kcs1xpHXgRitFsoXA4mFOC3-PC8GFsXD"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kcs1xpHXgRitFsoXA4mFOC3-PC8GFsXD",
+      startupCount: "30K+"
 
     },
   
@@ -262,7 +269,8 @@ export const listData = [
       color: "#fae8ff",
       category: "Deeptech",
       startupName:"Neuconomi",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1kYug201dyvQNS_1pXWicJkZ4Kho6yKx3"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kYug201dyvQNS_1pXWicJkZ4Kho6yKx3",
+      startupCount: "9K"
 
     },
   
@@ -298,7 +306,8 @@ export const listData = [
       color: "#e2e8f0",
       category: "SaaS",
       startupName:"Ctruh",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1kXiPfZXXBB6Cs62mEGEPwp56JfFoj20D"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kXiPfZXXBB6Cs62mEGEPwp56JfFoj20D",
+      startupCount: "3K+"
 
     },
   
@@ -330,7 +339,8 @@ export const listData = [
       color: "#e2e8f0",
       category: "E-Commerce",
       startupName:"ecoRobotix",
-      startupLogo:"https://drive.google.com/uc?export=view&id=1kQThNQazYOenEPtehS4rLqVSLJtTkNfG"
+      startupLogo:"https://drive.google.com/uc?export=view&id=1kQThNQazYOenEPtehS4rLqVSLJtTkNfG",
+      startupCount: "1K"
     },
   ];
   
