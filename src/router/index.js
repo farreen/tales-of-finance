@@ -5,7 +5,6 @@ import { GlossaryRouter } from "../modules/glossary/router/glossary-router";
 import { HomePageRouter } from "../modules/home/router/home-router";
 import { InfographicsRouter } from "../modules/infographics/router/infographics-router";
 import { TalesOfStartupsRouter } from "../modules/tales-of-startups/router/tales-of-startups-router";
-import { CategoriesRouter } from "../modules/categories/router/categories-router";
 
 export const IndexRouter = [
   { path: "*", element: <NotFound /> },
@@ -15,5 +14,4 @@ export const IndexRouter = [
   ...GlossaryRouter,
   ...ContactUsRouter,
   ...TalesOfStartupsRouter,
-  ...CategoriesRouter,
 ];
