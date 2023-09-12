@@ -11,31 +11,10 @@ import "swiper/css";
 // import Card from "../../../common/components/card";
 import { listData } from "../../tales-of-startups/demo-data/demo-list-data";
 import '../styles/home-card.css';
-import { navBarData } from "../../../data/nav-bar-data";
 import useRedirect from "../../../common/custom-hooks/useRedirect";
-import {routeData} from '../../../data/nav-bar-data';
-const HomePage = () => {
-  console.log("routes", ...navBarData)
-  const redirect = useRedirect();
-  let talesOfStartups = "";
-  let infographics = "";
-  let blogs = "";
-  let categoriesListing = "";
-  navBarData.map((item) => {
-    if (item?.path === "tales-of-startups") {
-      return talesOfStartups = item?.path
-    } else if (item?.path === "infographics") {
-      return infographics = item?.path
-    } else if (item?.path === "blogs") {
-      return blogs = item?.path
-    }
-  })
-  routeData.map((item) => {
-    if(item?.path === "categories-listing"){
-      return categoriesListing = item?.path
-    }
-  })
 
+const HomePage = () => {
+  const redirect = useRedirect();
   return (
     <>
       <FeaturedCarsoul />
@@ -43,8 +22,8 @@ const HomePage = () => {
         <div className="w-100">
           <div className="d-flex justify-content-between align-items-center">
             <h1>Tales of Startup</h1>
-            <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => redirect(categoriesListing)}>
-              view
+            <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => redirect('tales-of-startups')}>
+              view more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"
@@ -71,16 +50,14 @@ const HomePage = () => {
             </div>
 
           }
-
-          {/* <div style={{float: "right", overflow: "auto"}}className="fs-5 mt-2">List your Startup</div> */}
         </div>
       </Container>
       <Container className="my-4 w-100">
         <div className="">
           <div className="d-flex justify-content-between align-items-center">
             <h1>Infographics</h1>
-            <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => redirect(infographics)}>
-              view
+            <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => redirect("infographics")}>
+              view more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"
@@ -119,22 +96,9 @@ const HomePage = () => {
           >
             {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((_i) => (
               <SwiperSlide className="px-2 my-2 cursor-pointer">
-                {/* <Card>
-                  <Card.Img
-                    variant="top"
-                    src="https://picsum.photos/200/300"
-                    height={200}
-                    width={100}
-                  />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text className="text-truncate">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                  </Card.Body>
-                </Card> */}
-                <Card className="bg-dark text-white boxShadow">
+                <Card className="bg-dark text-white boxShadow" onClick={() => {
+                  redirect(`infographics/details/${_i}`)
+                }}>
                   <Card.Img
                     variant="top"
                     src="https://picsum.photos/200/300"
@@ -161,8 +125,8 @@ const HomePage = () => {
         <div className="">
           <div className="d-flex justify-content-between align-items-center">
             <h1>Blogs</h1>
-            <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => redirect(blogs)}>
-              view
+            <div className="view-btn d-flex justify-content-between align-items-center gap-2" onClick={() => redirect("blogs")}>
+              view more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"
@@ -201,7 +165,9 @@ const HomePage = () => {
           >
             {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((_i) => (
               <SwiperSlide className="px-2 my-2 cursor-pointer">
-                <Card className="boxShadow">
+                <Card className="boxShadow" onClick={() => {
+                  redirect(`blogs/details/${_i}`)
+                }}>
                   <Card.Img
                     variant="top"
                     src="https://picsum.photos/200/300"
