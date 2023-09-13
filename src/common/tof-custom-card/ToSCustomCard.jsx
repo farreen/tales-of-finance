@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './styles.css/tofCustomCardStyles.css';
+import './styles/tofCustomCardStyles.css';
 import {
     Badge,
     Button,
